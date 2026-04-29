@@ -1,31 +1,16 @@
-&nbsp;	<?php
+<?php
+  $nome = "Isabella Almeida";
 
-	echo "<h1>Docker funcionando </h1>";
+  
+  $idade = 18;
 
+  
+  if ($idade >= 18) {
+      echo "<h1> Verificação de idade do visitante: $nome!</h1>";
+      echo "<p> Você é maior de idade" ;
+  } else {
+      echo "<h1> Verificação de idade do visitante: $nome!</h1>";
+      echo "<p> Você é maior de idade" ;
+  }
 
-
-	$host = 'db';
-
-	$user = 'root';
-
-	$pass = '1234';
-
-	$db = 'meubanco';
-
-
-
-	$conn = new mysqli($host, $user, $pass, $db);
-
-
-
-	if ($conn->connect_error) {
-
-   	die("Erro: " . $conn->connect_error);
-
-	}
-
-
-
-	echo "Conectado ao banco!";
-
-	?>
+?>
